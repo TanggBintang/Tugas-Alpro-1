@@ -1,240 +1,25 @@
-print("\n ---Selamat datang di PIZZA Car Kecor--- \n ")
+print("\n ---Selamat datang di PIZZA HUD--- \n ")
 # Pseudocode
-# Pelanggan mengunjungi website lalu memilih Topping Pizza yang tersedia
+# Manunjukkan Pilihan topping pizza
 print("PILIH TOPPING PIZZAMU")
-print("--> Frank furter")
+print("--> Frankfurter")
 print("--> Meat Monsta")
 print("--> Super Supreme")
 print("--> Super Supreme Chicken")
+# Pelanggan menginput pilihan toppingnya
 toppingpizza = (input("Pilihanmu ? : "))
-hargapizza = 0;
-# Memilih salah satu dari keempat pizza
-# Jika memilih Frank furter, maka akan mulai memilih tambahan lainnya
-if toppingpizza == "Frank furter":
-    # Menunjukkan Harga Topping dan total sementara
+if toppingpizza == "Frankfurter":
     print("\n Harganya Rp. 50.000")
-    hargapizza = 50000
-    print(">> Harga Total sementara Rp. " + str(hargapizza))
-    # Menunjukkan daftar pilihan Crust
-    print("\n Pilih Crust Pizzamu")
-    print("--> Pan")
-    print("--> StuffedCrust Cheese")
-    print("--> StuffedCrust Sausage")
-    print("--> Cheese Bite")
-    # Meminta input pilihan crust pizza
-    crustpizza = (input("Pilihanmu ? : "))
-    # Menginput pilihan crust pizza dan menunjukkan harganya
-    if crustpizza == "Pan":
-        print("\n Harganya Rp. 10.000")
-        hargapizza += 10000
-    elif crustpizza == "StuffedCrust Cheese":
-        print("\n Harganya Rp. 12.000")
-        hargapizza += 12000
-    elif crustpizza == "StuffedCrust Sausage":
-        print("\n Harganya Rp. 13.000")
-        hargapizza += 13000
-    elif crustpizza == "Cheese Bite":
-        print("\n Harganya Rp. 14.000")
-        hargapizza += 14000
-    else :
-        print("masukkan pilihan dengan benar")
-    # menunjukkan total harga sementara
-    print(">> Total harga sementara Rp. " + str(hargapizza))
-    print("\n")
-    # menunjukkan daftar pilihan ukuran pizza
-    print("Pilih Ukuran Pizzamu")
-    print("--> Reguler")
-    print("--> Large")
-    print("--> Extra Large")
-    # meminta input pilihan ukuran pizza
-    ukuranpizza = (input("Pilihanmu ? : "))
-    # menginput pilihan ukuran pizza dan menunjukkan harganya
-    if ukuranpizza == "Reguler":
-        print("\n Harganya Rp. 10.000")
-        hargapizza += 10000
-    elif ukuranpizza == "Large":
-        print("\n Harganya Rp. 12.000")
-        hargapizza += 12000
-    elif ukuranpizza == "Extra Large":
-        print("\n Harganya Rp. 13.000")
-        hargapizza += 13000
-    else :
-        print("lanjut")
-    # Menunjukkan total harga belanja sementara
-    print(">> Total harga sementara Rp. " + str(hargapizza))
-    print("\n")
-    # menawarkankan pelanggan untuk membeli tambahan cheese
-    tambahancheese = input("Apakah ingin tambahan cheese (tambah Rp. 13.000) ? y/n : \n")
-    # Jika iya maka akan membayar sebesar Rp. 13.000 dan menjumlahkan dengan total sementara
-    if tambahancheese == "y" :
-        hargapizza += 13000
-    # jika tidak maka akan langsung menghitung Total harga keseluruhan yang harus dibayar
-    else :
-        print("Oke, lanjut\n")
-    # Menunjukkan Total harga keseluruhan
-    print("\n --> Harga pizzamu adalah Rp. " + str(hargapizza), "\n")
-
-if toppingpizza == "Meat Monsta":
-    # Memilih crust pizza
-    print("\n Harganya Rp. 60.000")
-    hargapizza = 60000
-    print(">> Harga Total sementara Rp. " + str(hargapizza))
-    print("\n Pilih Crust Pizzamu")
-    print("--> pan")
-    print("--> StuffedCrust Cheese")
-    print("--> StuffedCrust Sausage")
-    print("--> Cheese Bite")
-    # Cek 
-    crustpizza = (input("Pilihanmu ? : "))
-    if crustpizza == "pan":
-        print("\n Harganya Rp. 10.000")
-        hargapizza += 10000
-    elif crustpizza == "StuffedCrust Cheese":
-        print("\n Harganya Rp. 12.000")
-        hargapizza += 12000
-    elif crustpizza == "StuffedCrust Sausage":
-        print("\n Harganya Rp. 13.000")
-        hargapizza += 13000
-    elif crustpizza == "Cheese Bite":
-        print("\n Harganya Rp. 14.000")
-        hargapizza += 14000
-    else :
-        print("masukkan pilihan dengan benar")
-    print(">> Harga Total sementara Rp. " + str(hargapizza))
-    print("\n")
-    
-    print("Pilih Ukuran Pizzamu")
-    print("--> Reguler")
-    print("--> Large")
-    print("--> Extra Large")
-    ukuranpizza = (input("Pilihanmu ? : "))
-    if ukuranpizza == "Reguler":
-        print("\n Harganya Rp. 10.000")
-        hargapizza += 10000
-    elif ukuranpizza == "Large":
-        print("\n Harganya Rp. 12.000")
-        hargapizza += 12000
-    elif ukuranpizza == "Extra Large":
-        print("\n Harganya Rp. 13.000")
-        hargapizza += 13000
-    else :
-        print("lanjut")
-    print(">> Harga Total sementara Rp. " + str(hargapizza))
-    print("\n")
-
-    tambahancheese = input("Apakah ingin tambahan cheese (tambah Rp. 13.000) ? y/n\n")
-    if tambahancheese == "y" :
-        hargapizza += 13000
-    else :
-        print("Oke, lanjut\n")
-    print("\n --> Harga pizzamu adalah Rp. " + str(hargapizza), "\n")
-
-if toppingpizza == "Super Supreme":
-    # Memilih crust pizza
-    print("\n Harganya Rp. 65.000")
-    hargapizza = 65000
-    print(">> Harga Total sementara Rp. " + str(hargapizza))
-    print("\n Pilih Crust Pizzamu")
-    print("--> pan")
-    print("--> StuffedCrust Cheese")
-    print("--> StuffedCrust Sausage")
-    print("--> Cheese Bite")
-    # Cek 
-    crustpizza = (input("Pilihanmu ? : "))
-    if crustpizza == "pan":
-        print("\n Harganya Rp. 10.000")
-        hargapizza += 10000
-    elif crustpizza == "StuffedCrust Cheese":
-        print("\n Harganya Rp. 12.000")
-        hargapizza += 12000
-    elif crustpizza == "StuffedCrust Sausage":
-        print("\n Harganya Rp. 13.000")
-        hargapizza += 13000
-    elif crustpizza == "Cheese Bite":
-        print("\n Harganya Rp. 14.000")
-        hargapizza += 14000
-    else :
-        print("masukkan pilihan dengan benar")
-    print(">> Harga Total sementara Rp. " + str(hargapizza))
-    print("\n")
-    
-    print("Pilih Ukuran Pizzamu")
-    print("--> Reguler")
-    print("--> Large")
-    print("--> Extra Large")
-    ukuranpizza = (input("Pilihanmu ? : "))
-    if ukuranpizza == "Reguler":
-        print("\n Harganya Rp. 10.000")
-        hargapizza += 10000
-    elif ukuranpizza == "Large":
-        print("\n Harganya Rp. 12.000")
-        hargapizza += 12000
-    elif ukuranpizza == "Extra Large":
-        print("\n Harganya Rp. 13.000")
-        hargapizza += 13000
-    else :
-        print("lanjut")
-    print(">> Harga Total sementara Rp. " + str(hargapizza))
-    print("\n")
-
-    tambahancheese = input("Apakah ingin tambahan cheese (tambah Rp. 13.000) ? y/n\n")
-    if tambahancheese == "y" :
-        hargapizza += 13000
-    else :
-        print("Oke, lanjut\n")
-    print("\n --> Harga pizzamu adalah Rp. " + str(hargapizza), "\n")
-
-if toppingpizza == "Super Supreme Chicken":
-    # Memilih crust pizza
-    print("\n Harganya Rp. 70.000")
-    hargapizza = 70000
-    print(">> Harga Total sementara Rp. " + str(hargapizza))
-    print("\n Pilih Crust Pizzamu")
-    print("--> pan")
-    print("--> StuffedCrust Cheese")
-    print("--> StuffedCrust Sausage")
-    print("--> Cheese Bite")
-    # Cek 
-    crustpizza = (input("Pilihanmu ? : "))
-    if crustpizza == "pan":
-        print("\n Harganya Rp. 10.000")
-        hargapizza += 10000
-    elif crustpizza == "StuffedCrust Cheese":
-        print("\n Harganya Rp. 12.000")
-        hargapizza += 12000
-    elif crustpizza == "StuffedCrust Sausage":
-        print("\n Harganya Rp. 13.000")
-        hargapizza += 13000
-    elif crustpizza == "Cheese Bite":
-        print("\n Harganya Rp. 14.000")
-        hargapizza += 14000
-    else :
-        print("masukkan pilihan dengan benar")
-    print(">> Harga Total sementara Rp. " + str(hargapizza))
-    print("\n")
-    
-    print("Pilih Ukuran Pizzamu")
-    print("--> Reguler")
-    print("--> Large")
-    print("--> Extra Large")
-    ukuranpizza = (input("Pilihanmu ? : "))
-    if ukuranpizza == "Reguler":
-        print("\n Harganya Rp. 10.000")
-        hargapizza += 10000
-    elif ukuranpizza == "Large":
-        print("\n Harganya Rp. 12.000")
-        hargapizza += 12000
-    elif ukuranpizza == "Extra Large":
-        print("\n Harganya Rp. 13.000")
-        hargapizza += 13000
-    else :
-        print("lanjut")
-    print(">> Harga Total sementara Rp. " + str(hargapizza))
-    print("\n")
-
-    tambahancheese = input("Apakah ingin tambahan cheese (tambah Rp. 13.000) ? y/n :")
-    if tambahancheese == "y" :
-        hargapizza += 13000
-    else :
-        print("Oke, lanjut\n")
-    print("\n --> Harga pizzamu adalah Rp. " + str(hargapizza), "\n")
+    hargatopping = 50000
+elif toppingpizza == "Meat Monsta":
+    print("\n Harganya Rp. 62.000")
+    hargatopping = 62000
+elif toppingpizza == "Super Supreme":
+    print("\n Harganya Rp. 75.000")
+    hargatopping = 75000
+elif toppingpizza == "Super Supreme Chicken":
+    print("\n Harganya Rp. 80.000")
+    hargatopping = 80000
+else :
+    print = ("Error!")
+    exit()
