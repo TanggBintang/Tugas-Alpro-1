@@ -20,6 +20,9 @@ elif toppingpizza == "Super Supreme":
 elif toppingpizza == "Super Supreme Chicken":
     print("\n Harganya Rp. 80.000")
     hargatopping = 80000
+else :
+    print = ("Error!")
+    exit()
 # Menunjukkan pilihan ukuran pizza
 print("\n Pilih Ukuran Pizzamu")
 print("--> Reguler")
@@ -38,7 +41,4 @@ elif ukuranpizza == "Extra Large":
     harga_ukuran = 13000
 else :
     print("lanjut")
-    exit()
-else :
-    print = ("Error!")
     exit()
