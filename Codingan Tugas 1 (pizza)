@@ -61,3 +61,13 @@ elif ukuranpizza == "Extra Large":
 else :
     print("lanjut")
     exit()
+# Menghitung total harga pizza sebelum ada tambahan extra cheese
+hargatotal = hargatopping + harga_crust + harga_ukuran
+# Menawarkan extra cheese pada pelanggan
+extracheese = (input("\n Apakah anda ingin tambahan cheese (Rp. 13.000? : (ya/tidak) "))
+# Pelanggan akan dikenakan biaya tambahan sebesar Rp. 13.000 dengan total harga pizza sebelumnnya jika menginginkan extra cheese
+if extracheese == "ya":
+    hargatotal += 13000
+else :
+    print("\n Okei Terima Kasih")
+print("\n Total Harga Pizzamu Yaitu Rp. ", hargatotal, "\n")
