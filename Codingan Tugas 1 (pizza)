@@ -70,4 +70,5 @@ if extracheese == "ya":
     hargatotal += 13000
 else :
     print("\n Okei Terima Kasih")
+print("\n Terima kasih telah berbelanja di Pizza HUD \n")
 print("\n Total Harga Pizzamu Yaitu Rp. ", hargatotal, "\n")
