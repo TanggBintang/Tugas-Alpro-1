@@ -23,6 +23,20 @@ elif toppingpizza == "Super Supreme Chicken":
 else :
     print = ("Error!")
     exit()
+# Menunjukan pilihan crust pizza
+crust = str(input('pilih menu crust : '))
+if crust == 'Pan Pizza' :
+    harga_crust = 17000
+elif crust == 'ChessyBites' :
+    harga_crust = 13000
+elif crust == 'Crowncrust' :
+    harga_crust = 10000
+elif crust == 'Stuffedcrust' :
+    harga_crust = 11000
+else :
+    print("Pilihan anda tidak valid")
+print (harga_crust)
+
 # Menunjukkan pilihan ukuran pizza
 print("\n Pilih Ukuran Pizzamu")
 print("--> Reguler")
