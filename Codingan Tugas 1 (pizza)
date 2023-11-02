@@ -29,7 +29,6 @@ print("--> Pan Pizza")
 print("--> ChessyBites")
 print("--> Crowncrust")
 print("--> Stuffedcrust")
-crust = (input('pilih menu crust : '))
 crust = str(input('pilih menu crust : '))
 if crust == 'Pan Pizza' :
     harga_crust = 17000
